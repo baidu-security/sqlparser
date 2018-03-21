@@ -3,12 +3,13 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.baidu.openrasp</groupId>
-  <artifactId>openrasp</artifactId>
+  <artifactId>sqlparser</artifactId>
   <version>1.0</version>
   <packaging>jar</packaging>
 
-  <name>openrasp</name>
-  <url>http://maven.apache.org</url>
+  <name>sqlparser core</name>
+  <description>SQL token parser for OpenRASP</description>
+  <url>https://rasp.baidu.com/</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
