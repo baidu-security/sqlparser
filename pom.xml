@@ -4,7 +4,7 @@
 
   <groupId>com.baidu.openrasp</groupId>
   <artifactId>sqlparser</artifactId>
-  <version>1.1</version>
+  <version>1.2</version>
   <packaging>jar</packaging>
 
   <name>sqlparser core</name>
