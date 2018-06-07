@@ -17,9 +17,10 @@ public class SQLParser extends Parser {
 	protected static final PredictionContextCache _sharedContextCache =
 		new PredictionContextCache();
 	public static final int
-		Identifier=1, Number=2, DOUBLE_QUOTE=3, SINGLE_QUOTE=4, StringLiteral=5, 
-		EscapeSequence=6, BLOCK_COMMENT_START=7, BLOCK_COMMENT_END=8, BLOCK_COMMENT=9, 
-		POUND_COMMENT=10, COMMA=11, DOT=12, OR=13, SYMBOL=14, WS=15;
+		Identifier=1, Number=2, DOUBLE_QUOTE=3, SINGLE_QUOTE=4, L_BRACKET=5, R_BRACKET=6, 
+		StringLiteral=7, EscapeSequence=8, BLOCK_COMMENT_START=9, BLOCK_COMMENT_END=10, 
+		BLOCK_COMMENT=11, POUND_COMMENT=12, COMMA=13, DOT=14, OR=15, SYMBOL=16, 
+		WS=17;
 	public static final int
 		RULE_init = 0;
 	public static final String[] ruleNames = {
@@ -27,13 +28,14 @@ public class SQLParser extends Parser {
 	};
 
 	private static final String[] _LITERAL_NAMES = {
-		null, null, null, "'\"'", "'''", null, null, null, "'*/'", null, null, 
-		"','", "'.'", "'||'"
+		null, null, null, "'\"'", "'''", "'{'", "'}'", null, null, null, "'*/'", 
+		null, null, "','", "'.'", "'||'"
 	};
 	private static final String[] _SYMBOLIC_NAMES = {
-		null, "Identifier", "Number", "DOUBLE_QUOTE", "SINGLE_QUOTE", "StringLiteral", 
-		"EscapeSequence", "BLOCK_COMMENT_START", "BLOCK_COMMENT_END", "BLOCK_COMMENT", 
-		"POUND_COMMENT", "COMMA", "DOT", "OR", "SYMBOL", "WS"
+		null, "Identifier", "Number", "DOUBLE_QUOTE", "SINGLE_QUOTE", "L_BRACKET", 
+		"R_BRACKET", "StringLiteral", "EscapeSequence", "BLOCK_COMMENT_START", 
+		"BLOCK_COMMENT_END", "BLOCK_COMMENT", "POUND_COMMENT", "COMMA", "DOT", 
+		"OR", "SYMBOL", "WS"
 	};
 	public static final Vocabulary VOCABULARY = new VocabularyImpl(_LITERAL_NAMES, _SYMBOLIC_NAMES);
 
@@ -119,7 +121,7 @@ public class SQLParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\3\u0430\ud6d1\u8206\uad2d\u4417\uaef1\u8d80\uaadd\3\21\7\4\2\t\2\3\2"+
+		"\3\u0430\ud6d1\u8206\uad2d\u4417\uaef1\u8d80\uaadd\3\23\7\4\2\t\2\3\2"+
 		"\3\2\3\2\2\2\3\2\2\2\5\2\4\3\2\2\2\4\5\3\2\2\2\5\3\3\2\2\2\2";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());

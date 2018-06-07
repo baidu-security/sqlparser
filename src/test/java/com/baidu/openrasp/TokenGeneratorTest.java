@@ -4,6 +4,8 @@ import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
+import java.util.Arrays;
+
 /**
  * Unit test for simple TokenGenerator.
  */
@@ -33,6 +35,8 @@ public class TokenGeneratorTest
      */
     public void testApp()
     {
-        assertTrue( true );
+        String case1[] = TokenGenerator.tokenize("select 123 from dual where 1=1 and{`whatever`1=1}");
+        String result1[] = {"select", "123", "from", "dual", "where", "1", "=", "1", "and", "{", "`whatever`", "1", "=", "1", "}"};
+        assertTrue(Arrays.equals(case1, result1));
     }
 }
