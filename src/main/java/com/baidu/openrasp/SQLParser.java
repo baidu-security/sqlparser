@@ -1,5 +1,4 @@
 // Generated from SQL.g4 by ANTLR 4.5
-package com.baidu.openrasp;
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
@@ -29,7 +28,7 @@ public class SQLParser extends Parser {
 
 	private static final String[] _LITERAL_NAMES = {
 		null, null, null, "'\"'", "'''", null, null, "'{'", "'}'", null, null, 
-		null, "'*/'", "','", "'.'", "'||'", "'='", "'@'", "';'"
+		"'/*!'", "'*/'", "','", "'.'", "'||'", "'='", "'@'", "';'"
 	};
 	private static final String[] _SYMBOLIC_NAMES = {
 		null, "Identifier", "Number", "DOUBLE_QUOTE", "SINGLE_QUOTE", "BLOCK_COMMENT", 

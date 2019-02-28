@@ -1,5 +1,4 @@
 // Generated from SQL.g4 by ANTLR 4.5
-package com.baidu.openrasp;
 
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.misc.NotNull;
